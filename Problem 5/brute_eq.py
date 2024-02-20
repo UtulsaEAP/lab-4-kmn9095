@@ -12,6 +12,7 @@ def brute_eq():
     a = int(input())
     b = int(input())
     c = int(input())
+    print("test")
 
     #Read in second equation, dx + ey = f
     d = int(input())
