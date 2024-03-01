@@ -5,16 +5,15 @@ Name:
 Lab Time:
 
 """
-
-
 def reverse_binary():
-    user_num = int(input())
-    # YOUR CODE HERE
-def reverse_binary():
-    x = int(input())
-    while x > 1 :
-        print(str(x % 2))
-        x=x/2
+    x = int(input("Enter a positive integer: "))
+    binary_string = ""
+
+    while x > 0:
+        binary_string += str(x % 2)
+        x //= 2
+
+    print(binary_string[::-1])
 
 if __name__ == "__main__":
     reverse_binary()
