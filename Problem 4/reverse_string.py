@@ -7,7 +7,7 @@ Lab Time:
 
 def reverse_string():
     while True:
-        user_input = input("Enter a line of text (or 'Done' to exit): ")
+        user_input = input()
         if user_input.lower() in ["done", "d"]:
             break
         reversed_text = user_input[::-1]

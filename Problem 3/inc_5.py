@@ -7,8 +7,8 @@ Lab Time:
 
 def inc_5():
     # Get user input for the two integers
-    num1 = int(input("Enter your first integer: "))
-    num2 = int(input("Enter your second integer: "))
+    num1 = int(input())
+    num2 = int(input())
 
     # Check if num1 is less than or equal to num2
     if num1 <= num2:

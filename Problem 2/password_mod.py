@@ -5,7 +5,8 @@ Name:
 Lab Time:
 """
 
-def strengthen_password(password):
+def password_mod():
+    password = input()
     stronger_password = ''
     replacements = {'i': '1', 'a': '@', 'm': 'M', 'B': '8', 's': '$'}
     
@@ -16,9 +17,11 @@ def strengthen_password(password):
             stronger_password += char
     stronger_password += '!'
     
+    print(stronger_password)
     return stronger_password
 
 # Example usage:
-input_password = input("Enter a simple password: ")
-stronger_password = strengthen_password(input_password)
-print(stronger_password)
+if __name__ == "__main__":
+    password_mod()
+    #stronger_password = password_mod(input_password)
+    #print(stronger_password)
