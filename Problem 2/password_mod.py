@@ -10,8 +10,8 @@ def strengthen_password(password):
     replacements = {'i': '1', 'a': '@', 'm': 'M', 'B': '8', 's': '$'}
     
     for char in password:
-        if char.lower() in replacements:
-            stronger_password += replacements[char.lower()]
+        if char in replacements:
+            stronger_password += replacements[char]
         else:
             stronger_password += char
     stronger_password += '!'
